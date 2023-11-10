@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php $this->load->view('partials/head');?>
+<?php $this->load->view('partials/head'); ?>
 
 <body id="page-top">
 
@@ -9,7 +9,7 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <?php $this->load->view('partials/sidebar');?>
+        <?php $this->load->view('partials/sidebar'); ?>
         <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
@@ -19,7 +19,7 @@
             <div id="content">
 
                 <!-- Topbar -->
-                <?php $this->load->view('partials/topbar');?>
+                <?php $this->load->view('partials/topbar'); ?>
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
@@ -30,13 +30,17 @@
                         <h1 class="h3 mb-0 text-gray-800">Level</h1>
                         <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
+                        <button type="button" class="tambah btn btn-primary" data-toggle="modal" data-target="#myModal">
+                            Tambah
+                        </button>
                     </div>
 
                     <!-- Content Row -->
                     <div class="row">
-                    <?php $this->load->view('level/data-level'); ?>
-                    <?php $this->load->view('level/tambah'); ?>
-                    
+                        <!-- Button to Open the Modal -->
+                        <?php $this->load->view('level/data-level'); ?>
+                        <?php $this->load->view('level/tambah'); ?>
+
                     </div>
 
                     <!-- Content Row -->
@@ -44,10 +48,10 @@
                     <div class="row">
 
                         <!-- Area Chart -->
-                       
+
 
                         <!-- Pie Chart -->
-                       
+
                     </div>
 
                     <!-- Content Row -->
@@ -57,20 +61,20 @@
                         <div class="col-lg-6 mb-4">
 
                             <!-- Project Card Example -->
-                         
+
 
                             <!-- Color System -->
-                           
+
 
                         </div>
 
                         <div class="col-lg-6 mb-4">
 
                             <!-- Illustrations -->
-                            
+
 
                             <!-- Approach -->
-                           
+
 
                         </div>
                     </div>
@@ -82,7 +86,7 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <?php $this->load->view('partials/footer');?>
+            <?php $this->load->view('partials/footer'); ?>
             <!-- End of Footer -->
 
         </div>
@@ -97,8 +101,7 @@
     </a>
 
     <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -116,11 +119,11 @@
         </div>
     </div>
 
-    
+
     <!-- Bootstrap core JavaScript-->
-    <?php $this->load->view('partials/script');?>
-    <?php $this->load->view('level/script');?>
-   
+    <?php $this->load->view('partials/script'); ?>
+    <?php $this->load->view('level/script'); ?>
+
 
 </body>
 

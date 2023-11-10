@@ -1,7 +1,4 @@
-  <!-- Button to Open the Modal -->
-  <button type="button" class="tambah btn btn-primary" data-toggle="modal" data-target="#myModal">
-      Tambah
-  </button>
+
  <!-- The Modal -->
 <div class="modal fade" id="myModal">
     <div class="modal-dialog">
