@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php $this->load->view('partials/head'); ?>
+<?php $this->load->view('partials/head');?>
 
 <body id="page-top">
 
@@ -9,7 +9,7 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <?php $this->load->view('partials/sidebar'); ?>
+        <?php $this->load->view('partials/sidebar');?>
         <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
@@ -19,23 +19,21 @@
             <div id="content">
 
                 <!-- Topbar -->
-                <?php $this->load->view('partials/topbar'); ?>
+                <?php $this->load->view('partials/topbar');?>
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-
+                    
                     <!-- Content Row -->
-                    <?php $this->load->view('level/data-level'); ?>
-                    <?php $this->load->view('partials/footer'); ?>
-                    <?php $this->load->view('level/tambah'); ?>
-
-
-                </div>
-                <!-- /.container-fluid -->
-
-            </div>
-            <!-- End of Main Content -->
+                    
+                    <?php $this->load->view('login/data-login'); ?>
+                    <?php $this->load->view('partials/footer');?>
+                    <?php $this->load->view('login/tambah'); ?>                    
+                    
+                    <!-- Content Row -->
+             <!-- Footer -->
+            <!-- End of Footer -->
         </div>
         <!-- End of Content Wrapper -->
 
@@ -48,7 +46,8 @@
     </a>
 
     <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -66,11 +65,11 @@
         </div>
     </div>
 
-
+    
     <!-- Bootstrap core JavaScript-->
-    <?php $this->load->view('partials/script'); ?>
-    <?php $this->load->view('level/script'); ?>
-
+    <?php $this->load->view('partials/script');?>
+    <?php $this->load->view('login/script');?>
+   
 
 </body>
 

@@ -25,11 +25,10 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <!-- Content Row -->
-                    <?php $this->load->view('level/data-level'); ?>
-                    <?php $this->load->view('partials/footer'); ?>
-                    <?php $this->load->view('level/tambah'); ?>
 
+                    <?php $this->load->view('nilai/data-nilai'); ?>
+                    <?php $this->load->view('partials/footer'); ?>
+                    <?php $this->load->view('nilai/tambah'); ?>
 
                 </div>
                 <!-- /.container-fluid -->
@@ -54,7 +53,7 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
+                        <span aria-hidden="true">x</span>
                     </button>
                 </div>
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
@@ -69,7 +68,7 @@
 
     <!-- Bootstrap core JavaScript-->
     <?php $this->load->view('partials/script'); ?>
-    <?php $this->load->view('level/script'); ?>
+    <?php $this->load->view('nilai/script'); ?>
 
 
 </body>

@@ -25,10 +25,11 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
+
                     <!-- Content Row -->
-                    <?php $this->load->view('level/data-level'); ?>
+                    <?php $this->load->view('menu/data-menu'); ?>
                     <?php $this->load->view('partials/footer'); ?>
-                    <?php $this->load->view('level/tambah'); ?>
+                    <?php $this->load->view('menu/tambah'); ?>
 
 
                 </div>
@@ -36,6 +37,8 @@
 
             </div>
             <!-- End of Main Content -->
+
+
         </div>
         <!-- End of Content Wrapper -->
 
@@ -65,11 +68,9 @@
             </div>
         </div>
     </div>
-
-
     <!-- Bootstrap core JavaScript-->
     <?php $this->load->view('partials/script'); ?>
-    <?php $this->load->view('level/script'); ?>
+    <?php $this->load->view('menu/script'); ?>
 
 
 </body>

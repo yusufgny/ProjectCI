@@ -26,16 +26,17 @@
                 <div class="container-fluid">
 
                     <!-- Content Row -->
-                    <?php $this->load->view('level/data-level'); ?>
-                    <?php $this->load->view('partials/footer'); ?>
-                    <?php $this->load->view('level/tambah'); ?>
-
-
+                    <div class="row">
+                        <?php $this->load->view('siswa/data-siswa'); ?>
+                        <?php $this->load->view('partials/footer'); ?>
+                        <?php $this->load->view('siswa/tambah'); ?>
+                    </div>
                 </div>
                 <!-- /.container-fluid -->
 
             </div>
             <!-- End of Main Content -->
+
         </div>
         <!-- End of Content Wrapper -->
 
@@ -65,11 +66,9 @@
             </div>
         </div>
     </div>
-
-
     <!-- Bootstrap core JavaScript-->
     <?php $this->load->view('partials/script'); ?>
-    <?php $this->load->view('level/script'); ?>
+    <?php $this->load->view('siswa/script'); ?>
 
 
 </body>

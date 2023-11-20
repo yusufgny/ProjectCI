@@ -1,7 +1,7 @@
   <!-- DataTales Example -->
   <div class="card shadow mb-4">
         <div class="card-header py-3 d-flex justify-content-between align-items-center">
-            <h3 class="m-0 font-weight-bold text-primary">Data Guru</h3>
+            <h3 class="m-0 font-weight-bold text-primary">Data Login User</h3>
             <button type="button" class="tambah btn btn-primary" data-toggle="modal" data-target="#myModal">
                 Tambah
             </button>
@@ -14,7 +14,8 @@
     <thead>
         <tr>
             <th>No</th>
-            <th>Nama</th>
+            <th>Username</th>
+            <th>Roles</th>
             <th>Aksi</th>
         </tr>
     </thead>
@@ -25,15 +26,16 @@
         ?>
             <tr>
                 <td><?php echo $no; ?></td>
-                <td><?php echo $item->nama; ?></td>
-                <td><button type="button" class="btn btn-primary edit" data-toggle="modal" data-target="#editModal" data-id="<?php echo $item->id; ?>">Edit</button></button>
-                <button type="button" class="btn btn-danger hapus" data-toggle="modal" data-target="#konfirmasiModal" data-id="<?php echo $item->id; ?>">Hapus</button> </td>
+                <td><?php echo $item->username; ?></td>
+                <td><?php echo $item->nama_roles; ?></td>
+                <td><button type="button" class="btn btn-primary edit" data-toggle="modal" data-target="#editModal" data-id="<?php echo $item->id_user; ?>">Edit</button></button>  
+                <button type="button" class="btn btn-danger hapus" data-toggle="modal" data-target="#konfirmasiModal" data-id="<?php echo $item->id_user; ?>">Hapus</button> </td>
             </tr>
         <?php
             $no++;
         }
         ?>
-    </tbody>
+   </tbody>
                 </table>
             </div>
         </div>
@@ -43,6 +45,5 @@
     <!-- /.container-fluid -->
 
     </div>
-
-<?php $this->load->view('level/hapus');?>
-<?php $this->load->view('level/edit');?>
+<?php $this->load->view('login/hapus');?>
+<?php $this->load->view('login/edit');?>
